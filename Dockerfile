@@ -2,6 +2,8 @@ FROM pytorch/pytorch
 
 # Install Jupyter and other necessary dependencies
 RUN pip install jupyter
+RUN pip install matplotlib
+RUN pip install transformers
 
 WORKDIR /app
 COPY . /app
