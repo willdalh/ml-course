@@ -9,6 +9,9 @@ To run the container:
 ```
 docker run -p 8888:8888 --gpus all ai-crash-course
 ```
+Then do the following:
+- Follow the instructions in the terminal output.
+- Select `concepts.ipynb` when seen in the browser.
 
 ## Running through Google Colab
 If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this. 
