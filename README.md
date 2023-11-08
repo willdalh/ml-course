@@ -1,8 +1,11 @@
+This repository is a Machine Learning course focusing on Deep Neural Networks. It is built up of a series of Jupyter notebooks that allow for an interactive environment, where code is split into cells that can be run individually. More can be read on https://jupyter.org/. 
 
-## Building and running
+## Running the course
 The course can be run both locally and through Google Colab.
 
-### Building and running the docker image locally
+### Running locally
+
+#### Alternative 1 - Jupyter Notebook in the browser (Docker)
 
 ```bash
 docker build -t ml-course .
@@ -17,8 +20,12 @@ Then do the following:
 - Follow the instructions in the terminal output.
 - Select `concepts.ipynb` when seen in the browser.
 
-### Running through Google Colab
-If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this. 
+#### Alternative 2: Jupyter Notebook in VSCode (Docker + devcontainer) **Recommended**
+
+The repository includes a `devcontainer.json` file that VSCode will detect and prompt to build. The necessary extensions for running Jupyter Notebooks in VSCode is then automatically installed. 
+
+### Running in the cloud (Google Colab)
+If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this, but the service is free. 
 
 - Open https://colab.research.google.com/github/willdalh/deep-learning-concepts/blob/main/concepts.ipynb.
 - Select `Runtime` in the navigation bar.
