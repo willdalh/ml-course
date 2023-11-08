@@ -3,4 +3,3 @@ jupyter
 matplotlib
 transformers
 sentence_transformers
-qdrant-client

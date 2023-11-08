@@ -5,13 +5,13 @@ The course can be run both locally and through Google Colab.
 ### Building and running the docker image locally
 
 ```bash
-docker build -t ai-crash-course .
+docker build -t ml-course .
 ```
 This will install PyTorch and other necessary libraries in a Python environment.
 
 To run the container:
 ```
-docker run -p 8888:8888 --gpus all ai-crash-course
+docker run -p 8888:8888 --gpus all ml-course
 ```
 Then do the following:
 - Follow the instructions in the terminal output.
