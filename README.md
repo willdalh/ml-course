@@ -5,7 +5,7 @@ The course can be run both locally and through Google Colab.
 
 ### Running locally
 
-#### Alternative 1 - Jupyter Notebook in the browser (Docker)
+#### Alternative 1 - Jupyter Notebook in the browser (Docker)  **Recommended**
 
 ```bash
 docker build -t ml-course .
@@ -20,7 +20,7 @@ Then do the following:
 - Follow the instructions in the terminal output.
 - Select `concepts.ipynb` when seen in the browser.
 
-#### Alternative 2: Jupyter Notebook in VSCode (Docker + devcontainer) **Recommended**
+#### Alternative 2: Jupyter Notebook in VSCode (Docker + devcontainer)
 
 The repository includes a `devcontainer.json` file that VSCode will detect and prompt to build. The necessary extensions for running Jupyter Notebooks in VSCode is then automatically installed. 
 

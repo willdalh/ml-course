@@ -16,7 +16,12 @@
 				"ms-toolsai.jupyter"
 			]
 		}
-	}
+	},
+
+	"runArgs": [
+		"--gpus",
+		"all"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
