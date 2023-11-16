@@ -162,3 +162,6 @@ cython_debug/
 
 data
 saved_models/**/*.pt
+res/audio/*.*
+!res/audio/norwegian_example.mp3
+!res/audio/english_example.mp3
