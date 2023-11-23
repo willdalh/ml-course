@@ -4,3 +4,4 @@ matplotlib==3.8.2
 transformers==4.35.2
 sentence_transformers==2.2.2
 openai-whisper==20231106
+ipympl==0.9.3
