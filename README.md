@@ -6,7 +6,10 @@ The course consists of multiple parts, as indicated by the folders, where each c
 ## Running the course
 The course can be run both locally and through Google Colab.
 
+
+
 ### Running locally
+When running locally, it is advisable not to have multiple notebooks open simultaneously if your computer has limited RAM.
 
 #### Alternative 1 - Jupyter Notebook in the browser (Docker)  **Recommended**
 
@@ -31,6 +34,11 @@ The repository includes a `devcontainer.json` file that VSCode will detect and p
 If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this, but the service is free at restricted performance. 
 
 Unfortunately, Google Colab does not easily allow for opening a project with multiple notebooks, instead each of them must be opened individually. 
+Below are links to the notebooks organized by parts.
+
+[//]: # (Start of list)
+[//]: # (End of list)
+
 
 - Open https://colab.research.google.com/github/willdalh/deep-learning-concepts/blob/main/concepts.ipynb.
 - Select `Runtime` in the navigation bar.
