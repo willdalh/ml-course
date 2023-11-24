@@ -23,7 +23,7 @@ To run the container:
 docker run -p 8888:8888 --gpus all ml-course
 ```
 Then do the following:
-- Read the instructions in the terminal output, and follow them. A browser link pointing to a locally-hosted Jupyter interface should show up. 
+- Follow the instructions that appear in the terminal output. A browser link pointing to a locally-hosted Jupyter interface should show up. 
 - In the browser, choose any of the notebooks from the project structure. 
 
 #### Alternative 2: Jupyter Notebook in VSCode (Docker + devcontainer)
@@ -36,11 +36,26 @@ If your computer does not have a dedicated graphics card installed, but you want
 Unfortunately, Google Colab does not easily allow for opening a project with multiple notebooks, instead each of them must be opened individually. 
 Below are links to the notebooks organized by parts.
 
-[//]: # (Start of list)
-[//]: # (End of list)
+- Part 1 - Tensors
+    - Main: [Introduction to tensors](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part1-tensors/tensors.ipynb)
+    - Bonus: [Tensor indexing](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part1-tensors/bonus_indexing.ipynb)
 
+- Part 2 - Neural Networks
+    - Main: [Neural Network Models](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/neural_networks.ipynb)
+    - Bonus
+        - [Convolutional Neural Network](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_convnet.ipynb)
+        - [Gradients](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_gradients.ipynb)
+        - [Autoencoder](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_autoencoder.ipynb)
+        
 
-- Open https://colab.research.google.com/github/willdalh/deep-learning-concepts/blob/main/concepts.ipynb.
+- Part 3 - Natural Language Processing (NLP)
+    - Main: [NLP Overview](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part3-nlp/nlp.ipynb)
+    - Bonus
+        - [Audio Transcription](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part3-nlp/bonus_audio_transcription.ipynb)
+        - [Recurrent Neural Network](https://colab.research.google.com/github/willdalh/deep-learning-concepts/blob/main/part3-nlp/bonus_rnn.ipynb)
+
+After opening any of the notebooks in Colab, you will have to manually modify the environment to get access to a GPU. Follow the steps below.
+
 - Select `Runtime` in the navigation bar.
 - Click `Change Runtime type`.
 - Select `T4 GPU` in the popup and click save.
