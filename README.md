@@ -4,7 +4,7 @@ This repository is a Machine Learning course focusing on Deep Neural Networks. I
 The course consists of multiple parts, as indicated by the folders, where each contains a set of Jupyter Notebooks. In every part, there is a main notebook that is meant to be run first, before exploring the bonus notebooks. 
 
 ## Running the course
-The course can be run both locally and through Google Colab.
+The course is intended to be run locally. This is definitely recommended if you have a NVIDIA GPU installed on your machine. However, if this is not the case, the networks trained in this course are limited in size such that any modern CPU should be sufficient. If this is not practicable, the course can be run through Google Colab. The downside with this approach is that for every notebook, dependencies must be reinstalled and changes performed are only preserved if the notebooks are saved on Google Drive. 
 
 
 
@@ -37,28 +37,30 @@ Unfortunately, Google Colab does not easily allow for opening a project with mul
 Below are links to the notebooks organized by parts.
 
 - Part 1 - Tensors
-    - Main: [Introduction to tensors](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part1-tensors/tensors.ipynb)
-    - Bonus: [Tensor indexing](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part1-tensors/bonus_indexing.ipynb)
+    - Main: [Introduction to tensors](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part1-tensors/tensors.ipynb)
+    - Bonus: [Tensor indexing](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part1-tensors/bonus_indexing.ipynb)
 
 - Part 2 - Neural Networks
-    - Main: [Neural Network Models](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/neural_networks.ipynb)
+    - Main: [Neural Network Models](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/neural_networks.ipynb)
     - Bonus
-        - [Convolutional Neural Network](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_convnet.ipynb)
-        - [Gradients](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_gradients.ipynb)
-        - [Autoencoder](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part2-neural-networks/bonus_autoencoder.ipynb)
+        - [Convolutional Neural Networks](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/bonus_convnet.ipynb)
+        - [Gradients](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/bonus_gradients.ipynb)
+        - [Autoencoder](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/bonus_autoencoder.ipynb)
         
 
 - Part 3 - Natural Language Processing (NLP)
-    - Main: [NLP Overview](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part3-nlp/nlp.ipynb)
+    - Main: [NLP Overview](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part3-nlp/nlp.ipynb)
     - Bonus
-        - [Audio Transcription](https://colab.research.google.com/github/willdalh/deep-learning-course/blob/main/part3-nlp/bonus_audio_transcription.ipynb)
-        - [Recurrent Neural Network](https://colab.research.google.com/github/willdalh/deep-learning-concepts/blob/main/part3-nlp/bonus_rnn.ipynb)
+        - [Audio Transcription](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part3-nlp/bonus_audio_transcription.ipynb)
+        - [Recurrent Neural Network](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part3-nlp/bonus_rnn.ipynb)
 
-After opening any of the notebooks in Colab, you will have to manually modify the environment to get access to a GPU. Follow the steps below.
+After opening any of the notebooks in Colab, you will have to manually modify the environment to activate a GPU. Follow the steps below.
 
 - Select `Runtime` in the navigation bar.
 - Click `Change Runtime type`.
 - Select `T4 GPU` in the popup and click save.
+
+The notebook will restart, and you can verify GPU access by running `torch.cuda.is_available()` in a cell.
 
 
 ## Instructions for running code cells:
