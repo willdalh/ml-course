@@ -23,12 +23,15 @@ To run the container:
 docker run -p 8888:8888 --gpus all ml-course
 ```
 Then do the following:
-- Follow the instructions that appear in the terminal output. A browser link pointing to a locally-hosted Jupyter interface should show up. 
+- Follow the instructions that appear in the terminal output. Multiple browser links pointing to a locally-hosted Jupyter interface should show up. Open the one starting with `http://127.0.0.1:8888/tree...`.
 - In the browser, choose any of the notebooks from the project structure. 
 
-#### Alternative 2: Jupyter Notebook in VSCode (Docker + devcontainer)
+#### Alternative 2: Jupyter Notebook in VSCode (Docker devcontainer)
 
-The repository includes a `devcontainer.json` file that VSCode will detect and prompt to build. The necessary extensions for running Jupyter Notebooks in VSCode is then automatically installed. 
+The repository includes a `devcontainer.json` file that VSCode will detect and prompt to build when. The necessary extensions for running Jupyter Notebooks in VSCode is then automatically installed. 
+
+Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension and reload the VSCode window.
+
 
 ### Running in the cloud (Google Colab)
 If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this, but the service is free at restricted performance. 
