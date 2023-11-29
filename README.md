@@ -4,13 +4,13 @@ This repository is a Machine Learning course focusing on Deep Neural Networks. I
 The course consists of multiple parts, as indicated by the folders, where each contains a set of Jupyter Notebooks. In every part, there is a main notebook that is meant to be run first, before you explore the bonus notebooks. 
 
 ## Running the course
-The course is intended to be run locally. This is definitely recommended if you have a NVIDIA GPU installed on your machine. However, if this is not the case, the networks trained in this course are limited in size such that any modern CPU should be sufficient. If this is not practicable, the course can be run through Google Colab. The downside with this approach is that for every notebook, dependencies must be reinstalled and changes performed are only preserved if the notebooks are saved on Google Drive. 
+The course is intended to be run locally. This is definitely recommended if you have a NVIDIA GPU installed on your machine. However, the networks trained in this course are limited in size such that any modern CPU should be sufficient. If this is not practicable, the course can be run through the cloud service, Google Colab. The downside with this approach is that for every notebook, dependencies must be reinstalled and changes performed are only preserved if the notebooks are saved on Google Drive. 
 
 ### Running locally
 When running locally, it is advisable not to have multiple notebooks open simultaneously. Although a notebook is not currently being viewed, but has been active, model weights and other states will be stored in memory. 
 
 #### Alternative 1 - Jupyter Notebook in the browser (Docker)  **Recommended**
-
+Make sure your Docker Daemon is running, then run the build command:
 ```bash
 docker build -t ml-course .
 ```
@@ -27,19 +27,18 @@ The next steps are:
 - In the browser, choose any of the notebooks from the project structure. 
 
 #### Alternative 2: Jupyter Notebook in VSCode (Docker devcontainer)
-
-The repository contains the necessary configuration files for running a dev-container in VSCode. Start by installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension. After that, open this repository in a new window. VSCode will then prompt you to select between the following `devcontainer.json` files:
+The repository contains the necessary configuration files for running a dev-container in VSCode. Start by installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, and make sure that Docker Daemon is running. After that, open this repository in a new window. VSCode will then prompt you to select between two `devcontainer.json` files:
 
 ![dev containers to choose from](./res/devcontainers.png)
 
-By standard, you should choose `ml-course`. If you have a NVIDIA GPU installed, select `ml-course-nvidia-gpu`.
+**By standard, you should choose `ml-course`**. If you have a NVIDIA GPU installed, select `ml-course-nvidia-gpu`.
 
 The dev-container will build and automatically open. 
 
 ### Running in the cloud (Google Colab)
 If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this, but the service is free at restricted performance. 
 
-Unfortunately, Google Colab does not easily allow for opening a project with multiple notebooks, instead each of them must be opened individually. 
+Unfortunately, Google Colab does not easily allow for opening a project with multiple notebooks. Each of them must instead be opened individually. 
 Below are links to the notebooks organized by parts.
 
 - Part 1 - Tensors
