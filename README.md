@@ -61,6 +61,7 @@ Below are links to the notebooks organized by parts.
         - [Audio Transcription](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part3-nlp/bonus_audio_transcription.ipynb)
         - [Recurrent Neural Network](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part3-nlp/bonus_rnn.ipynb)
 
+    
 After opening any of the notebooks in Colab, you will have to manually modify the environment to activate a GPU. Follow the steps below.
 
 - Select `Runtime` in the navigation bar.
@@ -69,8 +70,7 @@ After opening any of the notebooks in Colab, you will have to manually modify th
 
 The notebook will restart, and you can verify GPU access by running `torch.cuda.is_available()` in a code cell.
 
-Each notebook starts with a script that installs the necessary dependencies. 
-
+**Each notebook starts with a script that installs the necessary dependencies in a Google Colab environment. When the cell containing this script finishes, you must restart the runtime.** If you switch to a GPU runtime after the dependencies have been installed, you must install them again. 
 
 ## Instructions for running code cells:
 - VSCode and Google Colab
