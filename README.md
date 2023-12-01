@@ -27,13 +27,16 @@ The next steps are:
 - In the browser, choose any of the notebooks from the project structure. 
 
 #### Alternative 2: Jupyter Notebook in VSCode (Docker devcontainer)
-The repository contains the necessary configuration files for running a dev-container in VSCode. Start by installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, and make sure that Docker Daemon is running. After that, open this repository in a new window. VSCode will then prompt you to select between two `devcontainer.json` files:
+The repository contains the necessary configuration files for running a dev-container in VSCode. Start by installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, and make sure that Docker Daemon is running. After that, open this repository in a new window. VSCode will then prompt you with the ability to open the project in a devcontainer:
+
+![vscode dev container prompt](./res/devcontainers-vscode-prompt.png)
+
+If the above does not automatically present itself, open the command palette and run `Dev Containers: Rebuild and Reopen in Container`.  
+Select between the two `devcontainer.json` files:
 
 ![dev containers to choose from](./res/devcontainers.png)
 
 **By standard, you should choose `ml-course`**. If you have a NVIDIA GPU installed, select `ml-course-nvidia-gpu`.
-
-The dev-container will build and automatically open. 
 
 ### Running in the cloud (Google Colab)
 If your computer does not have a dedicated graphics card installed, but you want to test the code with a GPU, you can run it through Google Colab. You need a Google account for this, but the service is free at restricted performance. 
@@ -65,6 +68,8 @@ After opening any of the notebooks in Colab, you will have to manually modify th
 - Select `T4 GPU` in the popup and click save.
 
 The notebook will restart, and you can verify GPU access by running `torch.cuda.is_available()` in a code cell.
+
+Each notebook starts with a script that installs the necessary dependencies. 
 
 
 ## Instructions for running code cells:
