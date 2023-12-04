@@ -49,7 +49,7 @@ Below are links to the notebooks organized by parts.
     - Bonus: [Tensor indexing](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part1-tensors/bonus_indexing.ipynb)
 
 - Part 2 - Neural Networks
-    - Main: [Neural Network](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/neural_networks.ipynb)
+    - Main: [Neural Networks](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/neural_networks.ipynb)
     - Bonus
         - [Convolutional Neural Networks](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/bonus_convnet.ipynb)
         - [Gradients](https://colab.research.google.com/github/willdalh/ml-course/blob/main/part2-neural-networks/bonus_gradients.ipynb)
