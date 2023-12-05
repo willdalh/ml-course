@@ -70,7 +70,7 @@ After opening any of the notebooks in Colab, you will have to manually modify th
 
 The notebook will restart, and you can verify GPU access by running `torch.cuda.is_available()` in a code cell.
 
-**Each notebook starts with a script that installs the necessary dependencies in a Google Colab environment. When the cell containing this script finishes, you must restart the runtime.** If you switch to a GPU runtime after the dependencies have been installed, you must install them again. 
+**Each notebook starts with a script that installs the necessary dependencies in a Google Colab environment. When the cell containing this script finishes, you must restart the runtime. You can do this through `Runtime > Restart Session` in the navigation bar.** If you switch to a GPU runtime after the dependencies have been installed, you must install them again. 
 
 ## Instructions for running code cells:
 - VSCode and Google Colab
