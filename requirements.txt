@@ -1,6 +1,7 @@
-torch==2.1.1
-jupyter==1.0.0
-matplotlib==3.8.2
-transformers==4.35.2
-sentence_transformers==2.2.2
-openai-whisper==20231117
+torch==2.5.1
+jupyter==1.1.1
+matplotlib==3.9.2
+transformers==4.46.3
+sentence_transformers==3.3.1
+openai-whisper==20240930
+ipympl==0.9.4 

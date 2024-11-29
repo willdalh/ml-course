@@ -8,7 +8,7 @@
 	// 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 	// 	"dockerfile": "../Dockerfile"
 	// },
-	"image": "pytorch/pytorch:2.1.1-cuda12.1-cudnn8-runtime",
+	"image": "pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -31,7 +31,7 @@
 	// "forwardPorts": [],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "pip install -r requirements.txt"
+	"postCreateCommand": "apt-get update && apt-get install -y ffmpeg && pip install -r requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

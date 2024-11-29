@@ -1,7 +1,11 @@
-FROM pytorch/pytorch:2.1.1-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime
 
 WORKDIR /app
 COPY . /app
+
+# Install ffmpeg and clean up to keep the image size small
+RUN apt-get update && apt-get install -y ffmpeg && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install Jupyter and other necessary dependencies
 RUN pip install -r requirements.txt
